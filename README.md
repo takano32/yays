@@ -64,3 +64,11 @@
 - `wayback_recover3.py` — Wayback CDX 列挙+並列復元(レジューム可能、要 `~/.cache/yays-recovery/` の CDX 索引)
 - `fix_query_links.py` — 復元したクエリ URL への参照をサニタイズ済みファイル名へ書き換え
 - `fix_rootrel.py` — ルート相対リンク(`/~yays/...`)の修正
+
+## archive-meta/
+
+復元の来歴データ(検証・再取得用)。
+
+- `wayback-provenance.jsonl` — 復元した全ファイルの出典記録(Wayback タイムスタンプ・元 URL・保存先パス・成否)。1 行 1 URL
+- `cdx_all.txt` — CDX API で列挙した `~yays/` 配下の全アーカイブ URL(ユニーク 5,428 件)
+- `cdx_snapshots.txt` — 全 200 キャプチャの索引(29,831 レコード)。`tools/wayback_recover3.py` の入力
