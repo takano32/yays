@@ -1,0 +1,110 @@
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=utf-8">
+<META name="ROBOTS" content="NOINDEX,NOFOLLOW">
+<META http-equiv="Content-Style-Type" content="text/css">
+<META http-equiv="Content-Script-Type" content="text/javascript">
+<TITLE>お気軽おえかきＢＢＳ</TITLE>
+<script language="JavaScript">
+<!--
+	function showApplet(){
+		var x,y=0;	var d = document.applet;	var mode,palette;
+		x = eval(d.width.value);	y = eval(d.height.value);
+		var mode = d.mode.value;
+		var palette = d.palette.selectedIndex;	palette = d.palette[palette].value;
+		window.location=unescape('./bbsnote.cgi?fc=paint_'+mode+'&width='+x+'&height='+y+'&palette='+palette);
+	}
+	
+//-->
+</script>
+
+
+
+<STYLE type="text/css">
+<!--
+.button { background: #0099CC;  color: #FFFFFF; font-size: 10pt;border:1;border-color:#FFFFDD;border-style: dotted}
+-->
+</STYLE>
+
+
+
+</HEAD>
+
+
+<script language="JavaScript">
+<!--
+  status="*は記入必須項目です";
+//-->
+</script>
+
+<BODY bgcolor="#D0E8FF" text="#0066CC" link="#333399" vlink="#003366" alink="#FF1111"><CENTER><BR>
++ WRITE +
+<BR>
+<!--SKIN:RESMESSAGE-->
+<table BORDER="0" width="400" CELLPADDING="2" cellspacing="0">
+<form method="post" name="CGIFORM" action="./bbsnote.cgi" ENCTYPE="multipart/form-data" target="_self">
+<input type="hidden" name="fc" VALUE="write">
+<input name=mode type=hidden value=""><input name=sort type=hidden value=""><input name=page type=hidden value="">
+<tr><td align=left> 
+<Font Color="#6677AA" Face="Verdana" SIZE="1"> NAME <span style="color:#aa1111;">*</span> </Font> <br>
+<input CLASS="button" type="text" size="30" name="name" value="" tabindex="1">
+</td><td align=left width="200">
+<Font Color="#6677AA" Face="Verdana" SIZE="1"> MAIL  </Font> <br>
+<input CLASS="button" type="text" size="30" name="mail" value="" tabindex="2">
+
+</td></tr>
+<!--SKIN_TITLE_FORM:begin-->
+<tr><td align=left width="200" colspan="2">
+<Font Color="#6677AA" Face="Verdana" SIZE="1"> TITLE  </Font> <br>
+<input CLASS="button" type="text" size="40" name="title" tabindex="3">
+</td></tr>
+<!--SKIN_TITLE_FORM:end-->
+
+<tr><td align=left colspan=2>
+<Font Color="#6677AA" Face="Verdana" SIZE="1"> HOME PAGE URL </Font> <br>
+<SMALL>http:// </SMALL><input CLASS="button" type="text" size="50" name="url" value="" tabindex="4">
+</td></tr>
+
+
+	<TR><TD align=left colspan=2><Font Color="#6677AA" Face="Verdana" SIZE="1"> 画像選択  </Font> <BR><INPUT CLASS="button" TYPE="FILE" NAME="file" VALUE="" SIZE=40><Font Color="#6677AA" Face="Verdana" SIZE="1"> ←ファイルを選択 </Font></td></tr>
+
+
+<tr><td align=left colspan="2">
+<Font Color="#6677AA" Face="Verdana" SIZE="1"> MESSAGE <span style="color:#aa1111;">*</span> </Font> <br>
+<textarea CLASS="button" rows="8" name="mesg" cols="53" wrap="soft" tabindex="8"></textarea>
+</td></tr>
+<tr><td align=left colspan="2" ALIGN="right" nowrap>
+<Font Color="#6677AA" Face="Verdana" SIZE="1"> PASSWORD </Font> <input CLASS="button" type="password" size="8" name="password" value=""> 
+
+
+<INPUT TYPE="CheckBOX" NAME="flower"  VALUE="1" tabindex="13" title="フラワーパニック" ><Font Color="#7788BB" Face="Verdana" SIZE="2"> FlowerPanic </Font>
+
+
+ <input CLASS="button" type="submit" value=" Submit " tabindex="8" title="内容を書きこみます">  
+<input CLASS="button" type="reset" value=" Erase " tabindex="11" title="全文削除します">&nbsp;
+</td></tr>
+<tr><td align=left colspan="2" NOWRAP>
+<Font Color="#6677AA" Face="Verdana" SIZE="1"> * 受信できる画像の最大データサイズは<B> 200 </B>KB  までです。(最大解像度 : 800 x 600 )<BR>
+* 画像ファイルには <B>JPG・PNG・GIF・PCH</B> が使用できます。<BR></Font>
+<Font Color="#6677AA" Face="Verdana" SIZE="1">* パスワードは半角英数で8文字まで有効です。</Font></td></tr>
+</form>
+</table>
+<BR>
+<CENTER><fONT SIZE=2>[<a TITLE="戻る" href="./bbsnote.cgi">BACK</a>]</FONT></CENTER>
+
+
+
+		
+
+	<A NAME="pages"><HR></A><DIV ALIGN="RIGHT"><SMALL>
+	
+	
+
+		<A TITLE="WonderCatStudio" HREF="http://www.jttk.zaq.ne.jp/wcs2/" TARGET="_blank">BBS NOTE 7.12</A> <SPAN TITLE="Basic Ver.1122"><b>Basic</b></SPAN>&nbsp;<BR>Client Program <A HREF="http://www.gt.sakura.ne.jp/~ocosama/" TARGET="_blank">(C)しぃちゃん(shi-cyan)</A> 
+
+	</SMALL></DIV>
+	
+</BODY>
+	</HTML>
+

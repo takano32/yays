@@ -1,0 +1,361 @@
+<html>
+<head>
+<STYLE TYPE="text/css">
+<!--
+/*枠の定義*/
+TABLE#id1 {border-style: double; border-color: #999999; background-color: #B8B8DC}
+/*一覧の舞閧フ定義*/
+TR#tr2 {background-color: #aaaaaa}
+/*一覧の記事欄の定義*/
+TR#tr3 {background-color: #eeeeee}
+TH#th1 {font-size:12pt}
+TD#td1 {font-size:9pt}
+/*FORM INPUT BOXの定義*/
+INPUT {border-color:#999999;border-width:midium;background-color: #FFE6FF;
+border-style: solid}
+/*FORM SELECT BOXの定義*/
+SELECT {border-width:midium;background-color: #FFE6FF;
+border-style: solid}
+/*FORM SUBMITボタンの定義*/
+.d1 {background-color: #0000a0;border-style: double; border-color:#555555;
+ color: #ffff00; font-weight: bolder;
+ border-width:thick;cursor:hand}
+/*FORM SUBMITボタンの定義*/
+.d2 {background-color: #0000a0;border-style: double; border-color:#555555;
+ color: #ff00ff;font-weight: bolder; border-width:thick;cursor:hand}
+/*FORM RADIO CHECK BOXの定義*/
+.d3 {border-style: double;background-color: #ffff80;border-color:#999999}
+/*投稿FORMの一部の定義*/
+.d4 {background-color: #999999; font-size:13pt}
+/*作品タイトル侮ヲの定義(タイトルに背景色を入れない場合、background-color:#eeeeeeを削除)*/
+.d5 {font-size:30pt;font-weight:bold;background-color:#eeeeee}
+/*作品内容の侮ヲ定義*/
+.d6 {font-size:13pt}
+/*FORM TEXTAREAの定義*/
+TEXTAREA {border-color:#999999;background-color: #FFE6FF;border-style:
+ solid;border-width:midium;background-image:URL(./textbg.gif)}
+/*リンク色の設定*/
+A:link{ color:blue }
+A:visited{ color:gray }
+A:active{ color:green }
+A{TEXT-DECORATION:NONE};
+.on { background-color: #ffff00;color: white;font-style: Italic; }
+.off {color: #555555;font-style: normal }
+-->
+</STYLE>
+<title>桃色文庫</title>
+</head>
+<body BACKGROUND="./back.gif" BGCOLOR="#F9E5EF" TEXT="#CC3399" LINK="#3366CC" VLINK="#6060F0">
+<center>
+<font style="font-size:30pt;font-weight:bold">
+桃色文庫
+</font>
+</center><br>
+・ひそかに女体萌えな妄想をお持ちの方、ぜひぜひ作品をお寄せ下さいませ。<BR>
+・万一、苦手なジャンルやカップリング、描写がありましたら単に<B>見なかったこと</B>にして下さい。喧嘩禁止。<BR>
+・このページへの直接リンクもフリーとしますので、作品アップローダとしても御活用下さい。（サイト趣旨は尊重してください）<BR>
+・CGIを利用してご自由に投稿してください。ただし女性作者様限定。（匿名でも問題ないです）<BR>
+・パスワードで投稿後の修正作業もできます。<BR>
+・法律に触れるもの、サイトに相応しくない作品は管理人判断で削除します。<BR>
+・他人の作品の無断転載等は著作権法に触れます。<BR>
+・なるべく原作が分かるようなタイトルでお願いします。<BR>
+・できれば推奨年齢、カップリング等を本文冒頭にお書き添え下さい。<BR>
+（推奨年齢[Rate]：Ｇ...全年齢　Ｒ...１５禁　Ｘ...１８禁　ＸＸＸ...特に過激な性描写・残酷描写有り）<BR>
+<center>
+<table cellspacing=3 width=100% bgcolor=#B8B8DC>
+<tr>
+<td colspan=5>
+<table align=center id=id1>
+<tr id=tr3>
+<th>
+最新作品集
+</th>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<th colspan=5>
+<font style="font-size:13pt">
+投稿LIST [ 現在 13 作品公開中 ]
+</font>
+</th>
+</tr>
+<form method=post action=http://www14.big.or.jp/~yays/cgi-bin/anthologys/anthologys.cgi>
+<input type=hidden name=action value="html4">
+<input type=hidden name="log" value="">
+<tr><th>
+ 作者を限定して抽出 
+<select name=sakusha>
+<option value=0>作者を選択
+<option value="くり子">くり子
+<option value="ムッシュー">ムッシュー
+<option value="ムッシュー＆ハム太">ムッシュー＆ハム太
+<option value="ムッシュー八重洲">ムッシュー八重洲
+<option value="特別ゲスト">特別ゲスト
+<option value="巳堂">巳堂
+</select>
+<input type=submit value=" リスト表示 " class="d1">
+</th>
+</form>
+<form method=post action=http://www14.big.or.jp/~yays/cgi-bin/anthologys/anthologys.cgi>
+<input type=hidden name=action value="html5">
+<input type=hidden name="log" value="">
+<th colspan=4>
+ 語句を指定して抽出 
+<input type=text name=serch size=16>
+<input type=submit value=" 検索 " class="d1">
+</th></tr>
+</form>
+<tr ID="tr2"><th>Title</th><th>NAME</th><th>投稿日</th><th>RES</th>
+<th>POINT</th>
+</tr>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="http://www14.big.or.jp/~yays/cgi-bin/anthologys/anthologys.cgi?action=html2&key=20020111101939">
+スタイル抜群な社長（遊戯王）</a>
+</font>
+</th>
+<td>
+特別ゲスト
+</td>
+<td id=td1>2002年01月11日(金) 10時19分39秒</td>
+<td align=right>
+0
+</td>
+<td align=right>
+0
+</td>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="anthologys.cgi_action-html2_key-20020111101207.html">
+♀遊戯ｉｎDUEL（遊戯王）</a>
+</font>
+</th>
+<td>
+特別ゲスト
+</td>
+<td id=td1>2002年01月11日(金) 10時12分07秒</td>
+<td align=right>
+0
+</td>
+<td align=right>
+0
+</td>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="anthologys.cgi_action-html2_key-20011230083907.html">
+クラピカのひみつ</a>
+</font>
+</th>
+<td>
+特別ゲスト
+</td>
+<td id=td1>2001年12月30日(日) 09時46分29秒</td>
+<td align=right>
+7
+</td>
+<td align=right>
+<font color=blue>7</font>
+</td>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="http://www14.big.or.jp/~yays/cgi-bin/anthologys/anthologys.cgi?action=html2&key=20011226233742">
+島村ジョーｉｎメイド服 (サイボーグ009)</a>
+</font>
+</th>
+<td>
+くり子
+</td>
+<td id=td1>2001年12月26日(水) 23時37分42秒</td>
+<td align=right>
+0
+</td>
+<td align=right>
+0
+</td>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="anthologys.cgi_action-html2_key-20011225154134.html">
+サイキックフォース異説(1)</a>
+</font>
+</th>
+<td>
+<a href="mailto:mailto:suama70@hotmail.com">巳堂</a>
+</td>
+<td id=td1>2001年12月25日(火) 15時41分34秒</td>
+<td align=right>
+0
+</td>
+<td align=right>
+0
+</td>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="anthologys.cgi_action-html2_key-20011221015940.html">
+クリスマス・キャロル（サイボーグ009）</a>
+</font>
+</th>
+<td>
+ムッシュー
+</td>
+<td id=td1>2001年12月21日(金) 01時59分40秒</td>
+<td align=right>
+1
+</td>
+<td align=right>
+<font color=blue>1</font>
+</td>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="anthologys.cgi_action-html2_key-20011217023130.html">
+魔に捧げる花冠・後編</a>
+</font>
+</th>
+<td>
+<a href="mailto:yays@geocities.co.jp">ムッシュー</a>
+</td>
+<td id=td1>2001年12月17日(月) 02時31分30秒</td>
+<td align=right>
+5
+</td>
+<td align=right>
+<font color=blue>5</font>
+</td>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="anthologys.cgi_action-html2_key-20011217022823.html">
+魔に捧げる花冠・前編</a>
+</font>
+</th>
+<td>
+<a href="mailto:yays@geocities.co.jp">ムッシュー</a>
+</td>
+<td id=td1>2001年12月17日(月) 02時28分23秒</td>
+<td align=right>
+0
+</td>
+<td align=right>
+0
+</td>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="http://www14.big.or.jp/~yays/cgi-bin/anthologys/anthologys.cgi?action=html2&key=20011215230046">
+誰がためにシンデレラ（サイボーグ009）</a>
+</font>
+</th>
+<td>
+<a href="mailto:yays@geocities.co.jp">ムッシュー</a>
+</td>
+<td id=td1>2001年12月16日(日) 01時46分06秒</td>
+<td align=right>
+1
+</td>
+<td align=right>
+<font color=blue>1</font>
+</td>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="http://www14.big.or.jp/~yays/cgi-bin/anthologys/anthologys.cgi?action=html2&key=20011215153415">
+塔の姫君（爆走兄弟レッツ＆ゴーＭＡＸ）</a>
+</font>
+</th>
+<td>
+<a href="mailto:yays@geocities.co.jp">ムッシュー</a>
+</td>
+<td id=td1>2001年12月15日(土) 15時34分15秒</td>
+<td align=right>
+2
+</td>
+<td align=right>
+<font color=blue>2</font>
+</td>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="anthologys.cgi_action-html2_key-20011208031138.html">
+島村嬢・危機一髪！（サイボーグ009）</a>
+</font>
+</th>
+<td>
+<a href="mailto:yays@geocities.co.jp">ムッシュー＆ハム太</a>
+</td>
+<td id=td1>2001年12月08日(土) 05時25分06秒</td>
+<td align=right>
+1
+</td>
+<td align=right>
+<font color=blue>10</font>
+</td>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="anthologys.cgi_action-html2_key-20011208030820.html">
+アキラの事情・パラレルEND （ヒカルの碁）</a>
+</font>
+</th>
+<td>
+<a href="mailto:yays@geocities.co.jp">ムッシュー八重洲</a>
+</td>
+<td id=td1>2001年12月08日(土) 03時08分20秒</td>
+<td align=right>
+2
+</td>
+<td align=right>
+<font color=blue>2</font>
+</td>
+<tr id="tr3">
+<th width=50%>
+<font style="font-weight:bold" onMouseOver="this.className='on'" onMouseOut="this.className='off'">
+<a href="anthologys.cgi_action-html2_key-20011208030539.html">
+塔矢アキラの事情（ヒカルの碁）</a>
+</font>
+</th>
+<td>
+<a href="mailto:yays@geocities.co.jp">ムッシュー</a>
+</td>
+<td id=td1>2001年12月08日(土) 03時05分39秒</td>
+<td align=right>
+1
+</td>
+<td align=right>
+0
+</td>
+</tr></table>
+</center><p>
+<table border=5 cellspacing=5 align=center><tr>
+<form method="post" action="http://www14.big.or.jp/~yays/cgi-bin/anthologys/anthologys.cgi">
+<input type=hidden name=action value="home">
+<td>
+<input type=submit value=" HOME " class="d1">
+</td>
+</form>
+<form method="post" action="http://www14.big.or.jp/~yays/cgi-bin/anthologys/anthologys.cgi">
+<input type=hidden name=action value="form">
+<td>
+<input type=submit value=" 新規投稿 " class="d1">
+</td>
+</form>
+<th bgcolor=#ffffff>
+作品はここまでです。
+</th>
+</tr></table><br>
+<hr>
+</center>
+<form method="post" action="http://www14.big.or.jp/~yays/cgi-bin/anthologys/anthologys.cgi">
+<input type=hidden name="action" value="sentaku">
+<input type=hidden name="log" value="">
+PASSWORD <input type=password name="pwd" size=10>
+<input type=submit value="管理者用" class="d1"></form>
+<div align=right><address><font size=3><a href="http://www2s.biglobe.ne.jp/~yasuu/cgi.html" target="_top">Anthologys V2.3  Script by YASUU!!</a></font></address></div>
+</body></html>
