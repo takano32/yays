@@ -1,0 +1,1 @@
+COPY /B "zetsubou.1"+"zetsubou.2"+"zetsubou.3" "zetsubou.EXE"
